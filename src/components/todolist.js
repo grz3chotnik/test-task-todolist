@@ -20,7 +20,7 @@ const TodoList = () => {
 
             <input value={inputValue} onChange={inputHandler} />
         <div>
-            <button onClick={() => {setListItems(inputValue)}} >add</button>
+            <button onClick={() => {setListItems([...listItems, inputValue])}} >add</button>
         </div>
         </>
     )
